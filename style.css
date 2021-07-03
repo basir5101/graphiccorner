@@ -53,10 +53,28 @@ input[type="file"] {
     box-shadow: 0px 5px 0px 0px green;
 }
 
+.work-method{
+    background: linear-gradient(white, white, white, white, white, #efefef);
+}
+
+.hours-need{
+    background: linear-gradient( white, white, #efefef);
+    padding: 10px 10px;
+}
+
+#payment-method{
+    display: none;
+    background: linear-gradient(white, white, white, white, white, #efefef);
+}
+
+#budget, #hours-budget{
+    display: none;
+}
 .payment {
     text-decoration: none;
     color: black;    
     transition: all 0.3s;
+    cursor: pointer;
 }
 
 .payment:hover{
