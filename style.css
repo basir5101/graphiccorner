@@ -81,3 +81,19 @@ input[type="file"] {
     background-color: rgb(231, 231, 231);
     color: black;
 }
+
+.usableArea{
+    cursor: pointer; 
+    position: relative;
+}
+.usableArea::after{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    content: var(--content, ' ');
+    font-size: 30px;
+
+}
+.usableArea:hover{
+    background-color: rgb(231, 231, 231);
+}
