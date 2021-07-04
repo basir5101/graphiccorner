@@ -97,3 +97,21 @@ input[type="file"] {
 .usableArea:hover{
     background-color: rgb(231, 231, 231);
 }
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ :root {
+    --overlay-color: rgba(0, 0, 0, .7);
+    --dialog-color: #e9ecef;
+    --dialog-border-radius: 20px;
+    --icon-color: rgba(73, 80, 87, .6);
+    --dialog-padding: 20px;
+    --drag-over-background: #e3e5e8;
+ }
+ 

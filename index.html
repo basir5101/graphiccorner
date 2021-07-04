@@ -35,16 +35,16 @@
                         <div class="mb-3">
                             <div class="file-upload">
                                 <label class="custom-file-upload">
-                                    <input type="file"/>
+                                    <input onchange="uploadFile()" id="upload-file" type="file"/>
                                     + Upload Files
                                 </label> 
                                 <span style="font-size: 20px;">Drag & Drop any images or documents that might be helpful is explaining your brief here  (Max file size: 25 MB)
                                 </span>
                                 </div>
                             <div class="file-info pt-4 px-4 d-flex justify-content-between">
-                                <p>gfhgf.jpg</p>
-                                <p>80.72KB</p>
-                                <p>X</p>
+                                <p id='file-name'></p>
+                                <p id= 'file-size'> </p>
+                                <p id="close-file"></p>
                             </div>
                             <hr style="height: 2px; background-color: gray;">
 
