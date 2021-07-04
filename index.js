@@ -13,7 +13,11 @@ const showHoursBudget = () =>{
 }
 
 const usableArea = (index) => {
-        const elements = document.querySelectorAll('.usableArea')
+        const elements = document.querySelectorAll('.usableArea');
+        elements.forEach(element => {
+            element.style.background= 'none';        
+            element.style.setProperty("--content", "' '");
+        });
         const element = elements[index];
         element.style.background= 'rgb(231, 231, 231)';        
         element.style.setProperty("--content", "'✔'");
