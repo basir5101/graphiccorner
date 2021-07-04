@@ -26,6 +26,8 @@ const usableArea = (index) => {
         console.log(value);
 }
 
+
+
 const uploadFile = () => {
     const input =  document.getElementById('upload-file');
     let file = input.files[0];
@@ -45,3 +47,26 @@ const uploadFile = () => {
         document.getElementById('file-size').innerHTML = null;
     })
 }
+
+const handleSubmit = (e) => {
+    e.preventDefault();
+    alert('hi')
+}
+
+const skills = (event) =>{
+     const input = document.getElementById('submit-skill');
+     value = input.value
+     const code = (event.which || event.keyCode)
+     if(code === 13){
+        const newSkill = document.createElement('button');
+        const text = document.createTextNode(value + ' ' + ' x')
+        newSkill.appendChild(text)
+        const parent = document.getElementById('skill-container');
+        parent.appendChild(newSkill);
+        input.value = ' ';
+        newSkill.addEventListener('click', () => {
+            newSkill.style.display = 'none'
+        })
+     }
+}
+
